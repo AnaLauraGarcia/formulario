@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="formulario-desarrolloWeb.css">
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="boxHeader">
+            <h1>Formulario de Contacto</h1>
+        </div>
+    </header>
+
+    <div class="boxFormulario">
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+            <br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="Ingrese su apellido">
+            <br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="1" required placeholder="Ingrese su edad" >
+            <br><br>
+
+            <label for="pais">País:</label>
+            <select name="pais" id="pais" required>
+                <option value="">Seleccione su país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="México">México</option>
+                <option value="Perú">Perú</option>
+            </select>
+            <br><br>
+
+            <label for="descripcion">Descripción personal:</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="5" maxlength="300"
+                placeholder="Ingrese una descripción personal"></textarea>
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+        </form>
+
+        
+    </div>
+
+    <footer>
+        <p>Síguenos en las redes sociales:
+        <a href="https://www.facebook.com/tuperfil">Facebook</a>,
+        <a href="https://www.twitter.com/tuperfil">Twitter</a>,
+        <a href="https://www.instagram.com/tuperfil">Instagram</a>
+    </p>
+    </footer>
+</body>
+
+</html>
